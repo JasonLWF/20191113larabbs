@@ -7,7 +7,7 @@
 
   <!-- CSRF token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>@yield('title', 'Lavavel进阶实践项目')</title>
+  <title>@yield('title', 'Lavavel进阶实践项目') - Lavavel进阶实践项目</title>
 
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
