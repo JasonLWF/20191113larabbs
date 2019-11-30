@@ -7,8 +7,8 @@
 
   <!-- CSRF token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>@yield('title', 'Lavavel进阶实践项目') - Lavavel进阶实践项目</title>
-  <meta name="description" content="@yield('description', 'LavavelBBS 爱好者社区')">
+  <title>@yield('title', 'Lavavel进阶实践项目') - {{ setting('site_name', 'Lavavel进阶实践项目') }}</title>
+  <meta name="description" content="@yield('description', setting('seo_description', 'LavavelBBS 爱好者社区'))">
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
   @yield('styles')
