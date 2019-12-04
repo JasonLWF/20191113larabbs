@@ -25,10 +25,9 @@
           <i class="far fa-folder"></i>
           {{ $topic->category->name }}
         </a>
-
         <span> • </span>
-        <a class="text-secondary" href="">
-        <i class="far fa-user"></i>
+        <a class="text-secondary" href="{{ route('users.show', [$topic->user_id]) }}">
+        <i class="far fa-user">{{ $topic->user->name }}</i>
         </a>
         <span> • </span>
         <i class="far fa-clock"></i>
